@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Condensed:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* inicio header */
+
+header{
+    height: 91px;
+    background-color: white;
+}
+
+.container-grid{
+    width: 1400px;
+    margin: auto;
+}
+
+.topo {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.topo nav{
+    width: 639px;
+}
+
+.logoAgostoVerde{
+    width: 150px;
+    height: 69px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu a{
+    color: #000;
+    text-decoration: none;
+    font-family: 'Handlee', cursive;
+    font-size: 30px;
+}
+
+.menu a:hover{
+    /* text-decoration: underline; */
+    /* text-decoration:  #113311 dashed; */
+    text-decoration: underline dashed #113311;
+}
+
+/* fim header */
+
+/* --------------------------------------------- */
+
+/* inicio banner */
+
+
+.banner{
+    height: 950px;
+    background-image: url(../img/alegre.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.banner h1{
+    font-family: 'Handlee', cursive;
+    font-size: 60px;
+    color: white;
+    width: 500px;
+}
+
+.conteudo-banner{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* .img-seta {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-seta img{
+    height: 150px;
+} */
+
+/* 
+
+.conteudo-banner{
+    height: 500px;
+    background-color: #000;
+} */
+
+
+.banner img{
+    height: 150px;
+    position: absolute;
+    bottom: 10px;
+}
+/* fim banner */
+
+/* --------------------------------------------- */
+
+/* inicio sobre */
+
+
+    .sobre-nos{
+        height: 800px;
+        background-color: #F5FDE7;
+
+    }
+    .sobre-ajuste{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 730px;
+    
+    }
+
+    .sobre-nos h2{
+        font-size: 50px;
+        font-family: 'Handlee', cursive;
+        color: #442B0D;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .foto-crianca{
+        position: absolute;
+        width: 550px;
+        height: 460px;
+        border-radius: 8px;
+        bottom: -15px;
+        left: -15px;
+    }
+
+    .texto-imagem{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .texto h3{
+        color: #113311;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .texto p{
+        color: #113311;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
+        font-size: 21px;
+    }
+
+    .texto{
+        width: 500px;
+
+    }
+
+    .fundo-cinza{
+        width: 550px;
+        height: 460px;
+        background-color: rgba(17, 51, 17, 20%);
+        position: relative;
+        border-radius: 8px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+
+    .manchinha{
+        width: 275px;
+        height: 230px;
+        position: absolute;
+        bottom: -65px;
+        right: -65px;
+    }
+    
+/* fim sobre */
+
+/* --------------------------------------------- */
+
+/* inicio missoes e desafios */
+
+/* fim missoes e desafios */
+
+
+/* --------------------------------------------- */
+
+/* inicio footer */
+
+footer{
+    background-color: #113311;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+h3{
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* fim footer */
+
+/* --------------------------------------------- */
+
+/* inicio ranking */
+
+/* fim ranking */
