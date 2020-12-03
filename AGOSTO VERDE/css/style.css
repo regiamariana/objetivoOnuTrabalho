@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Condensed:wght@300;700&display=swap');
+@keyframes fadeIn{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
 
 *{
     margin: 0;
@@ -72,6 +82,11 @@ header{
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.banner img{
+    height: 96px;
+    width: 130px;
 }
 
 .banner h1{
@@ -193,6 +208,9 @@ header{
         bottom: -65px;
         right: -65px;
     }
+
+    
+
     
 /* fim sobre */
 
@@ -200,6 +218,137 @@ header{
 
 /* inicio missoes e desafios */
 
+
+.missoes-desafios{
+    background-color: #F5E3BF;
+    height: 1455px;
+    position: relative;
+}
+
+
+.folhas{
+    width: 100%;
+    height: 1463px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.missoes-desafios-completo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.missoes-desafios h2{
+    color: #113311;
+    font-size: 50px;
+    font-family: 'Handlee', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.missoes-anterior{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.missoes{
+    width: 885px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.missoes-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.missoes-boxx{
+    width: 228px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.missoes-box h3, .missoes-boxx h3{
+    color: #113311;
+    font-size: 28px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.missoes-box p, .missoes-boxx p{
+    font-size: 23px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.desafios-anterior{
+    display: flex;
+    justify-content: center;
+}
+
+.desafios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 808px;
+}
+
+
+
+.desafios-box{
+    display: flex;
+    width: 890px;
+}
+
+.desafios-box p{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.desafios-box img{
+    width: 60px;
+    height: 60px;
+}
+
+.pontos{
+    width: 200px;
+}
+
+
+
+
+/* .geral{
+    height: 100px;
+}
+
+.hello{
+    animation-name: fadeIn 1s;
+   
+    border: 2px solid grey;
+    transition: all 3s;
+    height: 100px;
+} */
+
+/* .hello-active{
+    border: 2px solid red;
+    background: grey;
+}
+
+
+.hello:hover{
+    background-color: #113311;
+} */
 /* fim missoes e desafios */
 
 
@@ -217,7 +366,7 @@ footer{
 
 
 
-h3{
+footer h3{
     text-transform: uppercase;
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
