@@ -82,6 +82,7 @@ header{
 }
 
 .banner h1{
+    animation: fadeIn;
     font-family: 'Handlee', cursive;
     font-size: 60px;
     color: white;
@@ -280,6 +281,8 @@ header{
     font-size: 28px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .missoes-box p, .missoes-boxx p{
@@ -299,6 +302,7 @@ header{
     flex-direction: column;
     justify-content: space-between;
     height: 808px;
+    
 }
 
 
@@ -306,13 +310,15 @@ header{
 .desafios-box{
     display: flex;
     width: 890px;
+    justify-content: center;
+    
 }
 
 .desafios-box p{
     font-size: 22px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: lighter;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .desafios-box img{
@@ -356,6 +362,7 @@ header{
 /* inicio footer */
 
 footer{
+    animation: isBouncing;
     background-color: #113311;
     height: 82px;
     display: flex;
@@ -426,28 +433,128 @@ footer h3{
     }
 }
 
-@keyframes Mari{
-    0% {
-        transform: translateY(10px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
+@keyframes isBouncing2{
+    to{
         transform: translateX(10px);
     }
 }
 
+@keyframes agir{
+    to{
+        transform: translateY(8px);
+    }
+}
+
+@keyframes Mari{
+    0% {
+        transform: translateY(10px);
+    }
+    25% {
+        transform: translateY(15px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(10px);
+       
+    }
+}
+
+@keyframes Gege{
+    0% {
+        transform: skewY(10deg);
+    }
+    25% {
+        transform: skewX(10deg);
+    }
+    75% {
+        transform: skewX(15deg);
+    }
+    100% {
+        transform: skewY(15deg);
+        
+    }
+}
+
+/* h1{
+    animation: fadeIn 1s ease alternate infinite;
+} */
+
+.manchinha{
+    animation: Gege 3s ease-in-out alternate infinite;
+}
+
 .banner img{
-    animation: isBouncing 1s ease alternate infinite;
+    animation: isBouncing 1s ease-out alternate infinite;
 }
 
 .folhas-voando{
     animation-name: Mari;
-    animation-duration: 3s;
+    animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transform-origin: top;
+}
+
+.desafios-box img{
+    animation: isBouncing2 1s ease-out alternate infinite;
+}
+
+.missoes-box img, .missoes-boxx img{
+    animation: agir 2s ease-out alternate infinite;
+}
+
+
+
+.hello{
+    transition: all 1s;
+    align-items: center;
+}
+
+.hello2{
+    transition: all 1s;
+    align-items: center;
+}
+
+.hello3{
+    transition: all 1s;
+    align-items: center;
+}
+
+.hello4{
+    transition: all 1s;
+}
+
+.hello4 img{
+    margin-top: 10px;
+}
+
+.hello-active{
+    background-color: #e0cca4a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hello-active2{
+    background-color: #e0cca4a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.hello-active3{
+    background-color: #e0cca4a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.hello-active4{
+    background-color: #e0cca4a6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
 }
 
 
