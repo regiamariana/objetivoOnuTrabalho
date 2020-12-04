@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Roboto+Condensed:wght@300;700&display=swap');
-@keyframes fadeIn{
-    0%{
-        opacity: 1;
-    }
 
-    100%{
-        opacity: 0;
-    }
-}
 
 
 *{
@@ -137,8 +129,15 @@ header{
     .sobre-nos{
         height: 800px;
         background-color: #F5FDE7;
+        position: relative;
 
     }
+
+    .folhas-voando{
+        position: absolute;
+        top: -130px;
+    }
+
     .sobre-ajuste{
         display: flex;
         flex-direction: column;
@@ -381,3 +380,76 @@ footer h3{
 /* inicio ranking */
 
 /* fim ranking */
+
+/* --------------------------------------------- */
+
+/* início animação */
+
+[data-anime]{
+    opacity: 0;
+    transition: 0.6s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100px, 0, 0);
+
+    
+}
+
+[data-anime="right"]{
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime="abaixar"]{
+    transform: rotateX(-18i0deg);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transform: rotateX(0deg);
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes isBouncing{
+    to{
+        transform: translateY(20px);
+    }
+}
+
+@keyframes Mari{
+    0% {
+        transform: translateY(10px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.banner img{
+    animation: isBouncing 1s ease alternate infinite;
+}
+
+.folhas-voando{
+    animation-name: Mari;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: top;
+}
+
+
+
+/* fim animação */
