@@ -497,25 +497,29 @@ footer h3{
 
 .tabela-ranking thead tr{
     text-align: center;
+    
     background-image: url(../img/brush12.png) ;
     height: 120px;
 }
 
 .tabela-ranking tbody td{
+    align-items: center;
     text-align: center;
     border-image: url(../img/linhas.png) 50;
+    height: 100px;
+}
+
+.tabela-ranking img{
 }
 
 .total{
     width: 150px;
 }
 
-.tabela-ranking  td{
+.tabela-ranking tbody tr:hover{
   
-    padding-bottom: 60px;
-
-    /* border-top: 1px solid black; */
-    border-image: url(../img/linhas.png) 50;
+    background-color:rgba(82, 141, 82, 20%);
+  
 }
 
 
@@ -549,6 +553,17 @@ footer h3{
     width: 160x;
     height:140px;
 }
+
+.rankingTd{
+    /* background-color: black; */
+}
+
+.hm {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 
 /* fim ranking */
 
@@ -682,7 +697,7 @@ footer h3{
     animation-direction: alternate;
     transform-origin: top;
 }
-}
+
 
 .desafios-box img{
     animation: isBouncing2 1s ease-out alternate infinite;
